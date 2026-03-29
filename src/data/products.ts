@@ -48,7 +48,7 @@ export const products: Product[] = [
     price: 850000,
     category: "Artisan Decor",
     // Fixed failure 404 ID with a highly stable wooden craft photo
-    image: "https://images.unsplash.com/photo-1540304453526-805c87799736?q=80&w=1080&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=1080&auto=format&fit=crop", 
     description: "Carved from a single block of sustainably sourced Jepara teak wood. Perfect as a centerpiece or functional serving dish."
   }
 ];

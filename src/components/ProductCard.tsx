@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Product, useCart } from "@/context/CartContext";
 import { ShoppingBag, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 interface ProductCardProps {
   product: Product;
@@ -12,7 +11,6 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
-  const [isHovered, setIsHovered] = useState(false);
   const [added, setAdded] = useState(false);
 
   const handleAdd = (e: React.MouseEvent) => {
@@ -25,8 +23,6 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div 
       className="group flex flex-col h-full cursor-pointer bg-white"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       {/* Visual Container */}
       <div className="relative aspect-[4/5] overflow-hidden bg-stone-100 shadow-[0_20px_50px_rgba(0,0,0,0.03)] border border-forest/5 transition-all duration-500 group-hover:shadow-[0_40px_80px_rgba(0,0,0,0.08)] group-hover:border-gold/20">
